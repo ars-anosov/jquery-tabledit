@@ -1,12 +1,12 @@
 /*!
- * Tabledit v1.2.4 (https://github.com/ars-anosov/jquery-tabledit)
+ * Tabledit v1.2.5 (https://github.com/ars-anosov/jquery-tabledit)
  * Copyright (c) 2015 Celso Marques
  * Licensed under MIT (https://github.com/ars-anosov/jquery-tabledit/blob/master/LICENSE)
  */
 
 /**
  * @description Inline editor for HTML tables compatible with Bootstrap
- * @version 1.2.4
+ * @version 1.2.5
  * @author Celso Marques
  */
 
@@ -88,7 +88,7 @@ if (typeof jQuery === 'undefined') {
                   identifier: function() {
                       // Hide identifier column.
                       if (settings.hideIdentifier) {
-                          $table.find('th:nth-child(' + parseInt(settings.columns.identifier[0]) + 1 + '), tbody td:nth-child(' + parseInt(settings.columns.identifier[0]) + 1 + ')').hide();
+                          $table.find('th:nth-child(' + (parseInt(settings.columns.identifier[0]) + 1) + '), tbody td:nth-child(' + (parseInt(settings.columns.identifier[0]) + 1) + ')').hide();
                       }
   
                       var $td = $table.find('tbody td:nth-child(' + (parseInt(settings.columns.identifier[0]) + 1) + ')');
@@ -112,6 +112,9 @@ if (typeof jQuery === 'undefined') {
                           $td.each(function() {
                               // Get text of this cell.
                               var text = $(this).text();
+
+                              // Mask sugar text
+                              text = text.replace(/\[(.*)\]/, '<a href="$1">$1</a>')
   
                               // Add pointer as cursor.
                               if (!settings.editButton) {
