@@ -1,4 +1,4 @@
-# jQuery-Tabledit v1.2.4
+# jQuery-Tabledit
 Это форк https://github.com/markcell/jQuery-Tabledit
 
 Минифицирю JS через https://jscompress.com/
