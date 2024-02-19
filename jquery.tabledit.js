@@ -1,5 +1,5 @@
 /*!
- * Tabledit v1.2.5 (https://github.com/ars-anosov/jquery-tabledit)
+ * Tabledit v1.2.6 (https://github.com/ars-anosov/jquery-tabledit)
  * Copyright (c) 2015 Celso Marques
  * Licensed under MIT (https://github.com/ars-anosov/jquery-tabledit/blob/master/LICENSE)
  */
