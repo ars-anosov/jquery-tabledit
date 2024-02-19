@@ -6,7 +6,7 @@
 
 /**
  * @description Inline editor for HTML tables compatible with Bootstrap
- * @version 1.2.5
+ * @version 1.2.6
  * @author Celso Marques
  */
 
@@ -114,7 +114,8 @@ if (typeof jQuery === 'undefined') {
                               var text = $(this).text();
 
                               // Mask sugar text
-                              text = text.replace(/\[(.*)\]/, '<a href="$1">$1</a>')
+                              // text = text.replace(/\[(.*)\]/, '<a href="$1">$1</a>')
+                              text = text.replace( new RegExp(/\[(.*)\]/, 'g'), '<a href="$1">$1</a>')
   
                               // Add pointer as cursor.
                               if (!settings.editButton) {
