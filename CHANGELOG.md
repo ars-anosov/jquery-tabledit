@@ -1,3 +1,7 @@
+v1.2.7 (2024/09/09)
+-------------------
+- Переехал с Bootstrap v.3 на v.5. Теперь вместо glyphicon использую [Bootstrap Icons](https://github.com/twbs/icons/releases/tag/v1.11.3)
+
 v1.2.6 (2024/02/19)
 -------------------
 - Исправлен Mask sugar text, теперь замена всех вхождений

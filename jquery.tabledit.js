@@ -1,12 +1,12 @@
 /*!
- * Tabledit v1.2.6 (https://github.com/ars-anosov/jquery-tabledit)
+ * Tabledit v1.2.7 (https://github.com/ars-anosov/jquery-tabledit)
  * Copyright (c) 2015 Celso Marques
  * Licensed under MIT (https://github.com/ars-anosov/jquery-tabledit/blob/master/LICENSE)
  */
 
 /**
  * @description Inline editor for HTML tables compatible with Bootstrap
- * @version 1.2.6
+ * @version 1.2.7
  * @author Celso Marques
  */
 
@@ -42,13 +42,13 @@ if (typeof jQuery === 'undefined') {
               restoreButton: true,
               buttons: {
                   edit: {
-                      class: 'btn btn-sm btn-default',
-                      html: '<span class="glyphicon glyphicon-pencil"></span>',
+                      class: 'btn btn-outline-secondary',
+                      html: '<span class="bi bi-pencil"></span>',
                       action: 'edit'
                   },
                   delete: {
-                      class: 'btn btn-sm btn-default',
-                      html: '<span class="glyphicon glyphicon-trash"></span>',
+                      class: 'btn btn-outline-secondary',
+                      html: '<span class="bi bi-trash"></span>',
                       action: 'delete'
                   },
                   save: {
@@ -225,8 +225,8 @@ if (typeof jQuery === 'undefined') {
                               restoreButton = '<button type="button" class="tabledit-restore-button ' + settings.buttons.restore.class + '" style="display: none; float: none;">' + settings.buttons.restore.html + '</button>';
                           }
   
-                          var toolbar = '<div class="tabledit-toolbar ' + settings.toolbarClass + '" style="text-align: left;">\n\
-                                             <div class="' + settings.groupClass + '" style="float: none;">' + editButton + deleteButton + '</div>\n\
+                          var toolbar = '<div class="tabledit-toolbar ' + settings.toolbarClass + '" role="toolbar" style="text-align: left; display: block;">\n\
+                                             <div class="' + settings.groupClass + '" role="group" style="float: none;">' + editButton + deleteButton + '</div>\n\
                                              ' + saveButton + '\n\
                                              ' + confirmButton + '\n\
                                              ' + restoreButton + '\n\
