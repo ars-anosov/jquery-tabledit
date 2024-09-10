@@ -1,3 +1,8 @@
+v1.2.8 (2024/09/10)
+-------------------
+- inputClass - fix
+- textarea rows associated to text content
+
 v1.2.7 (2024/09/09)
 -------------------
 - Переехал с Bootstrap v.3 на v.5. Теперь вместо glyphicon использую [Bootstrap Icons](https://github.com/twbs/icons/releases/tag/v1.11.3)

@@ -1,12 +1,12 @@
 /*!
- * Tabledit v1.2.7 (https://github.com/ars-anosov/jquery-tabledit)
+ * Tabledit v1.2.8 (https://github.com/ars-anosov/jquery-tabledit)
  * Copyright (c) 2015 Celso Marques
  * Licensed under MIT (https://github.com/ars-anosov/jquery-tabledit/blob/master/LICENSE)
  */
 
 /**
  * @description Inline editor for HTML tables compatible with Bootstrap
- * @version 1.2.7
+ * @version 1.2.8
  * @author Celso Marques
  */
 
@@ -26,7 +26,7 @@ if (typeof jQuery === 'undefined') {
   
           var defaults = {
               url: window.location.href,
-              inputClass: 'form-control input-sm',
+              inputClass: 'form-control form-control-sm',
               toolbarClass: 'btn-toolbar',
               groupClass: 'btn-group btn-group-sm',
               dangerClass: 'danger',
@@ -125,7 +125,7 @@ if (typeof jQuery === 'undefined') {
                               // Create span element.
                               var span = '<span class="tabledit-span">' + text + '</span>';
                               if (settings.columns.editable[i][2] && settings.columns.editable[i][2] == "textarea") {
-                                  span = '<pre class="tabledit-span">' + text + '</pre>';
+                                  span = '<span class="tabledit-span" style="font-family: monospace; white-space: pre-wrap;">' + text + '</span>';
                               }
   
                               // Check if exists the third parameter of editable array.
@@ -157,7 +157,7 @@ if (typeof jQuery === 'undefined') {
                               {
                                   case "textarea":
                                       // Create textarea element.
-                                      input = '<textarea class="tabledit-input ' + settings.inputClass + '" name="' + settings.columns.editable[i][1] + '" style="display: none;" disabled>' + $(this).text()  + '</textarea>';
+                                      input = '<textarea rows="' + $(this).text().split('\n').length + '" class="tabledit-input ' + settings.inputClass + '" name="' + settings.columns.editable[i][1] + '" style="display: none; font-family: monospace;" disabled>' + $(this).text()  + '</textarea>';
                                       break;
   
                                   case "select":
