@@ -1,7 +1,11 @@
+v1.3.0 (2024/09/10)
+-------------------
+- под Bootstrap v.5 - поправил warning/danger классы. text-muted больше не работает с table-...
+
 v1.2.8 (2024/09/10)
 -------------------
 - inputClass - fix
-- textarea rows associated to text content
+- textarea - теперь по высоте соответствует содержимому
 
 v1.2.7 (2024/09/09)
 -------------------

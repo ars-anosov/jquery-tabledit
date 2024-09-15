@@ -1,12 +1,12 @@
 /*!
- * Tabledit v1.2.8 (https://github.com/ars-anosov/jquery-tabledit)
+ * Tabledit v1.3.0 (https://github.com/ars-anosov/jquery-tabledit)
  * Copyright (c) 2015 Celso Marques
  * Licensed under MIT (https://github.com/ars-anosov/jquery-tabledit/blob/master/LICENSE)
  */
 
 /**
  * @description Inline editor for HTML tables compatible with Bootstrap
- * @version 1.2.8
+ * @version 1.3.0
  * @author Celso Marques
  */
 
@@ -29,9 +29,9 @@ if (typeof jQuery === 'undefined') {
               inputClass: 'form-control form-control-sm',
               toolbarClass: 'btn-toolbar',
               groupClass: 'btn-group btn-group-sm',
-              dangerClass: 'danger',
-              warningClass: 'warning',
-              mutedClass: 'text-muted',
+              dangerClass: 'table-danger',
+              warningClass: 'table-success',
+              mutedClass: 'table-warning',
               eventType: 'click',
               rowIdentifier: 'id',
               hideIdentifier: false,
